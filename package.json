@@ -1,23 +1,23 @@
 {
-  "name": "@embedded-js/observable-state-proxy",
-  "description": "A small library for creating observable state proxies for Embedded JS.",
-  "version": "1.0.0",
-  "type": "module",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsup",
-    "ci": "tsc && pnpm run build && biome check && pnpm run check-exports && pnpm run test",
-    "format": "biome check --write",
-    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-    "test": "vitest run",
-    "prepublishOnly": "pnpm run ci"
-  },
-  "devDependencies": {
-    "@arethetypeswrong/cli": "^0.17.0",
-    "@biomejs/biome": "1.9.4",
-    "@changesets/cli": "^2.27.9",
-    "tsup": "^8.3.5",
-    "type-fest": "^4.27.0",
-    "vitest": "^2.1.5"
-  }
+	"name": "@embedded-js/observable-state-proxy",
+	"description": "A small library for creating observable state proxies for Embedded JS.",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsup",
+		"ci": "tsc && pnpm run build && biome check && pnpm run check-exports && pnpm run test",
+		"format": "biome check --write",
+		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+		"test": "vitest run",
+		"prepublishOnly": "pnpm run ci"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.0",
+		"@biomejs/biome": "1.9.4",
+		"@changesets/cli": "^2.27.9",
+		"tsup": "^8.3.5",
+		"type-fest": "^4.27.0",
+		"vitest": "^2.1.5"
+	}
 }
