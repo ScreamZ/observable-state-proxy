@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup",
-    "ci": "tsc && pnpm run build && pnpm run format && pnpm run check-exports",
+    "ci": "tsc && pnpm run build && biome check && pnpm run check-exports && pnpm run test",
     "format": "biome check --write",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "test": "vitest run",
